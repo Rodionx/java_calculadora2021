@@ -29,6 +29,16 @@ public class Ventanacalculadora extends javax.swing.JFrame {
     }
         
 }
+    //La funcion que se va a encargar de la operacion pulsada.
+    
+    public void OperacionPulsada(String _operacion){
+        //guardo el valor de la pantalla en la variable operando1.
+       operando1 = Double.valueOf(Display.getText());
+       //pongo a 0 la pantalla.
+       Display.setText("0");
+       
+       operacion = _operacion;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -317,7 +327,7 @@ public class Ventanacalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_Boton4ActionPerformed
 
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
-        EscribeNumeroenPantalla("+");
+        OperacionPulsada("+");
     }//GEN-LAST:event_BotonMasActionPerformed
 
     private void Boton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton5ActionPerformed
