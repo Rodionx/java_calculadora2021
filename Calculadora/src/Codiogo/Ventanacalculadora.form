@@ -76,9 +76,9 @@
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="jLabel1" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Component id="BoyonY" min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="Boyonporcentaje" min="-2" pref="70" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="BotonX" min="-2" pref="70" max="-2" attributes="0"/>
+                              <Component id="Botoncoma" min="-2" pref="70" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="Botondividir" min="-2" pref="70" max="-2" attributes="0"/>
                           </Group>
@@ -121,8 +121,8 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Botonclean" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="Botondividir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="BotonX" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="BoyonY" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="Botoncoma" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="Boyonporcentaje" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="Botonigual" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -263,26 +263,26 @@
     </Component>
     <Component class="javax.swing.JButton" name="Botondividir">
       <Properties>
-        <Property name="text" type="java.lang.String" value="%"/>
+        <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotondividirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="BotonX">
+    <Component class="javax.swing.JButton" name="Botoncoma">
       <Properties>
-        <Property name="text" type="java.lang.String" value="X"/>
+        <Property name="text" type="java.lang.String" value="Raiz"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonXActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotoncomaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="BoyonY">
+    <Component class="javax.swing.JButton" name="Boyonporcentaje">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Y"/>
+        <Property name="text" type="java.lang.String" value="%"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoyonYActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BoyonporcentajeActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Botonigual">
