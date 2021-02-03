@@ -361,6 +361,42 @@ public int sumLimit(int a, int b) {
   //En el caso contrario solo devurelve a.
   return a;
 }
+public int loneSum(int a, int b, int c) {
+  //Si los 3 son iguales devuelve 0.
+  if(a == b && b == c){
+    return 0;
+  }
+  //Si a y b son iguales devuelve c.
+  if(a == b){
+    return c;
+  }
+  //Si b y c son iguales devuelve a.
+  if(b == c){
+    return a;
+  }
+  //Si c y a son iguales devuelve b.
+  if(c == a){
+    return b;
+  }
+  //En cualquier otro caso devuelve la suma de los 3.
+  return a+b+c;
+}
+public int luckySum(int a, int b, int c) {
+  //Si a es igual a 13 devuelve 0.
+  if(a == 13){
+    return 0;
+  }
+  //Si b es igual a 13 devuelve a.
+  if(b == 13){
+    return a;
+  }
+  //Si c es igual a 13 devuelve a + b.
+  if(c == 13){
+    return a+b;
+  }
+  //En cualquier otro caso devuelve la suma de los 3.
+  return a+b+c;
+}
 
     /**
      * @param args the command line arguments
@@ -509,11 +545,20 @@ public int sumLimit(int a, int b) {
         System.out.println(ejercicio.blueTicket(9,2,0));
         System.out.println(ejercicio.blueTicket(6,1,4));
         //shareDigit
-         System.out.println("sumLimit");
+        System.out.println("sumLimit");
         System.out.println(ejercicio.sumLimit(2,3));
         System.out.println(ejercicio.sumLimit(8,3));
         System.out.println(ejercicio.sumLimit(8,1));
-        //
+        //loneSum
+        System.out.println("loneSum");
+        System.out.println(ejercicio.loneSum(1,2,3));
+        System.out.println(ejercicio.loneSum(3,2,3));
+        System.out.println(ejercicio.loneSum(3,3,3));
+        //luckySum
+        System.out.println("loneSum");
+        System.out.println(ejercicio.loneSum(1,2,3));
+        System.out.println(ejercicio.loneSum(3,2,13));
+        System.out.println(ejercicio.loneSum(1,13,3));
     }
     
 }
